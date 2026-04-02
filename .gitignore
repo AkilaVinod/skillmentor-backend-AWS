@@ -1,33 +1,71 @@
-HELP.md
+# =========================
+# ENV FILES (VERY IMPORTANT)
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# BUILD FILES
+# =========================
 target/
+build/
+*.jar
+*.war
+*.log
+
+# =========================
+# MAVEN
+# =========================
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# =========================
+# SPRING BOOT
+# =========================
+HELP.md
 
-### IntelliJ IDEA ###
-.idea
+# =========================
+# IDE FILES
+# =========================
+
+## IntelliJ
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+## Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+## VS Code
+.vscode/
+
+## NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# DOCKER (optional)
+# =========================
+docker-compose.override.yml
