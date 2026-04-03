@@ -12,8 +12,8 @@ jobs:
     
     steps:
     - name: Checkout Code
-      run: docker build ./SkillMentor_Backend_awsDeploy --tag my-image-name:$(date +%s)
-
+      run: docker build ./SkillMentor_Backend_awsDeploy --file ./SkillMentor_Backend_awsDeploy/Dockerfile --tag my-image-name:$(date +%s)
+      
     - name: Setup Java
       uses: actions/setup-java@v5
       with:
