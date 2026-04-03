@@ -12,7 +12,7 @@ jobs:
     
     steps:
     - name: Checkout Code
-      run: docker build . --tag Dockerfile:$(date +%s)
+      run: docker build . --tag dockerfile:$(date +%s)
       
     - name: Setup Java
       uses: actions/setup-java@v5
